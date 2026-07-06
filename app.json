@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "fightin",
-    "slug": "fightin",
+    "name": "SparrMatch",
+    "slug": "sparrmatch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
@@ -20,6 +20,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SparrMatch to access your photos for your fighter profile.",
+          "cameraPermission": "Allow SparrMatch to use your camera for profile photos."
+        }
+      ]
+    ]
   }
 }
